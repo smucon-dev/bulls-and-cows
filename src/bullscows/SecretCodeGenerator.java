@@ -10,7 +10,7 @@ public class SecretCodeGenerator {
 
         while (secretCode.length() < length) {
             Random r = new Random();
-            int randomInt = r.nextInt(length);
+            int randomInt = r.nextInt(characters);
             String digit = randomInt < 10 ? String.valueOf(randomInt) : String.valueOf((char)(randomInt + 87));
             if (secretCode.indexOf(digit) == -1) {
                 secretCode.append(digit);
