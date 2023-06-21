@@ -1,6 +1,5 @@
 package bullscows;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -9,9 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /**
-         * Handle input errors without Java exception handling.
-         */
+        // Handle input errors without Java exception handling.
 
         System.out.println("Input the length of the secret code:");
         int codeLength = readIntFromSystemIn();
