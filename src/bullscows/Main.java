@@ -12,11 +12,11 @@ public class Main {
 
         System.out.println("Input the length of the secret code:");
         int codeLength = readIntFromSystemIn();
-        if (codeLength == -1) { return; };
+        if (codeLength == -1) { return; }
 
         System.out.println("Input the number of possible symbols in the code:");
         int possibleChars = readIntFromSystemIn();
-        if (possibleChars == -1) { return; };
+        if (possibleChars == -1) { return; }
 
         if (codeLength > 36 || possibleChars > 36) {
             System.out.println("Error: maximum number of possible symbols in the code is 36 (0-9, a-z).");
@@ -68,7 +68,7 @@ public class Main {
             System.out.printf("Error: %s isn't a valid number.", input);
             return -1;
         } else {
-            return Integer.valueOf(input);
+            return Integer.parseInt(input);
         }
     }
 
